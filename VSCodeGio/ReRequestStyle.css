@@ -1,0 +1,16 @@
+
+body{
+
+    font-family: sans-serif;
+    background: url("http://vagazine.com/vaga_v3/wp-content/uploads/2015/11/Massimo-Uberti-stud-Yellowtrace.jpg")no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    
+    background-color: gray
+
+}
+
+{
+    transform: translate(-50%,-50%);
+}

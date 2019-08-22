@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>My Title</title>
+            <script type="text/javascript">
+            /*
+            function fn1(){
+                let str = document.getElementById("text1").value;
+                alert("Value inside the Text box is "+str);
+            }
+            */
+                function fn1(){
+                    let rd1 = document.getElementById("rd1");  
+                    let rd2 = document.getElementById("rd2");   
+                    
+                    if(rd1.checked==true){
+                        alert("The button selected is "+rd1.nodeValue);
+                    }else if(rd2.checked==true){
+                        alert("The button selected is "+rd2.nodeValue);
+                    }
+                    alert("No button selected...");
+                }
+             
+<
+            </script>
+        
+    </head>
+
+    <body>
+        <input id="text1" placeholder="Username">
+        <input type ="password" id="text1" placeholder="Password">
+        <br>
+            <button onclick="fn1()" id="btn1">Click Me</button>
+            <br>
+            <input id = "rd1" name = "grp1" type ="radio" value = "First Radio">
+            First Radio</input><br>
+            <input id = "rd2" name = "grp1" type ="radio" value = "First Radio">
+            Second Radio</input><br>
+           
+            
+
+
+    </body>
+</html>
