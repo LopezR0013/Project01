@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+</head>
+<body>
+	<h1> Add ticket here </h1>
+	<br>
+	
+	
+	<h4>Here is your user information</h4>
+	<div id="userId"></div>
+	<div id="userName"></div>
+	<div id="userPassword"></div>
+	<div id="userFirstName"></div>
+	<div id="userLastName"></div>
+	<div id="userEmail"></div>
+	<div id="userRoleId"></div>
+	<div id="reallylongstring"></div>
+	<div id="tickets"></div>
+	
+	
+	
+	
+	<form method="POST" action="fart.do" enctype="multipart/form-data">
+		<label>Amount </label>
+		<input type="text" name="Amount" id="Amount"
+			id="userpassword" placeholder="Enter a new password" />
+			<br>
+		<label> Description </label>
+		<input type="text" name="firstName"
+			id="firstName" placeholder="first name" />
+			<br> 
+		<select id="StatusID">
+  			<option value="1">Lodging</option>
+  			<option value="2" selected="selected">Travel</option>
+  			<option value="3">Food</option>
+  			<option value="4">Other</option>
+		</select>
+		<div class="input-group">
+  			<div class="input-group-prepend">
+    			<span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+  			</div>
+  			<div class="custom-file">
+    			<input type="file" class="custom-file-input" id="inputGroupFile01" name="inputGroupFile01"
+      				aria-describedby="inputGroupFileAddon01">
+    			<label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+  			</div>
+		</div>
+		<input type="submit"
+			class="btn btn-primary" id="SubmitButton" value="Register" />
+	</form>
+	<br>
+	<a href="http://localhost:8080/PROJECT1/html/AddTicket.html"
+	class="btn btn-primary" id="NewTicketButton">Back to Home </a>
+	<script type="text/javascript" src="../js/Home.js"></script>
+</body>
+</html>
+
