@@ -1,0 +1,22 @@
+<p>profile works!</p>
+<div class="centered-content-container">
+<form (ngSubmit)="addRecipe(newRecipe)">
+        <input type="text" name="newRecipe-name" [(ngModel)]="newRecipe.name" placeholder="Enter  Name">
+        <br>
+        <input type="text" name="newRecipe-category" [(ngModel)]="newRecipe.category" placeholder="Enter  category">
+        <br>
+        <input type="text" name="newRecipe-imageUrl" [(ngModel)]="newRecipe.imageUrl" placeholder="Enter  imageUrl">
+        <br>
+        <input type="text" name="newRecipe-ingredient" [(ngModel)]="newRecipe.ingredient" placeholder="Enter  ingredient">
+        <br>
+        <input type="text" name="newRecipe-directions" [(ngModel)]="newRecipe.directions" placeholder="Enter  directions">
+        <br>
+    <button class="btn btn-primary" type="submit">Add Hero</button>
+</form>
+
+
+
+<div *ngFor="let r of recipes">
+    <app-holder [recipe]="r"></app-holder>
+</div>
+</div>
