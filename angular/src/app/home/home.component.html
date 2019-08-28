@@ -1,0 +1,9 @@
+<p>home works!</p>
+<div class="centered-content-container">
+<div *ngFor="let j of recipes" >
+        <app-blob [recipe]="j"></app-blob>
+    </div>
+    <form (ngSubmit)="searchfunc(search)">
+        <input class="form control" name="search" [(ngModel)]="search">
+    </form>
+</div>
